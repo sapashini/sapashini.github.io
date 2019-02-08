@@ -1,0 +1,168 @@
+/*CSS Responsive Document*/
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*************************************************************/
+
+@media screen and (max-width: 450px) {
+ 
+ .header  {
+	  height:250px;
+  }
+  .header__name {
+	  font-size: 1.5em;
+  }
+  .header__title {
+	  font-size: .75em;
+  }
+  .header {
+	  height:150px;
+  }
+  .header__logo {
+	  height:30px;
+  }
+  .burger-menu  {
+	  font-size: 10vw;
+  }
+
+  .nav {
+    height: 35%;
+    width: 200px; 
+    position: absolute; 
+    z-index: 1; 
+    top: 170px;
+    left: 0;
+    background-color: #ffffff; 
+    overflow-x: hidden; 
+    opacity: 0.7;
+    -webkit-transform: translate(-200px, 0);
+    transform: translate(-200px, 0);
+    transition: 0.5s ease; 
+  }
+
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0,0);
+    
+  }
+
+  .nav-item {
+    width: 100%;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+    padding-left: 30px;
+    text-transform: uppercase; 
+  }
+
+  .text-item, .featured-text {
+  font-size: 4vw;
+
+  }
+
+  .footer-item {
+    margin: 20px;
+  }
+  
+
+}
+
+/*************************************************************/
+
+@media screen and (min-width: 451px) and (max-width: 600px) {
+
+  .burger-menu {
+    display: none;
+  }
+
+  .text-item, .featured-text {
+    font-size: 4vw;
+  }
+
+  .featured-text {
+    font-size: 2.5vw;
+  }
+
+  .header__name {
+    font-size: 6vw;
+    margin: 0em 0.3em 0.1em 0;
+  }
+
+  .header__title {
+    font-size: 3vw;
+    margin: 0em 1.3em 0 0;
+  }
+
+}
+
+/*************************************************************/
+
+@media screen and (min-width: 601px) {
+  
+  .burger-menu {
+    display: none;
+  }
+
+  .header__name {
+    font-size: 6vw;
+    margin: 0em 0.3em 0.1em 0;
+  }
+
+  .header__title {
+    font-size: 3vw;
+    margin: 0em 1.3em 0 0;
+  }
+
+  .text-item {
+    font-size: 2vw;
+  }
+
+  .featured-text {
+    font-size: 1.5vw;
+  }
+
+  .featured-title {
+    font-size: 3vw;
+  }
+
+  .featured-item {
+    float: left;
+    margin-right: 3px;
+    width: calc((100% - 10px)/3);
+  }
+}
+
+/*************************************************************/
+
+@media screen and (min-width:800px) {
+  main, .header, .nav, .content, hr, .footer {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__name {
+    font-size: 2vw;
+    margin: 0em 0.3em 0.1em 0;
+  }
+
+  .header__title {
+    font-size: 1vw;
+    margin: 0em 0.8em 0.2em 0;
+  }
+
+  .text-item {
+    font-size: 0.9vw;
+  }
+
+  .featured-text {
+    font-size: 0.6vw;
+  }
+
+  .featured-title {
+    font-size: 1.2vw;
+  }
+}
